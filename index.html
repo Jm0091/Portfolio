@@ -1,845 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jems-Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="src/img/code-icon.svg">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jems Chaudhary</title>
+
+    <link rel="shortcut icon" href="./src/img/jc-icon-clr.png" type="image/x-icon">
+    <link rel="icon" href="./src/img/jc-icon-clr.png" type="image/x-icon">
+
+    <!-- Font Awesome - Icons -->
+    <script src="https://kit.fontawesome.com/959b932d42.js" crossorigin="anonymous"></script>
+
+    <!-- Dev icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 
-    <!--Google Fonts-->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Notable&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <!--Google Icons-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lato&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
-    <!--BootStrap-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="styles.css">
+    <link href="stylesheet.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- HEADER  -->
-    <div id="header">
-        <div id="lines"></div>
-        <div id="text">
-            JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;
-            WELCOME&nbsp;&nbsp;WELCOME&nbsp;&nbsp;WELCOME&nbsp;&nbsp;
-            JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;JEMS&nbsp;
+    <div id="mobile-menu-open">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+        <div id="mobile-menu-close">
+            <i class="fa-solid fa-x" aria-hidden="true"></i>
         </div>
-
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Portfolio</a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Intro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#work-exp">Work Experince</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div id="photo-div">
-            <img src="src/img/jems2.png" id="jems-photo" class="img-fluid">
+        <ul id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Jems Chaudhary</h1>
+            <h2>&nbsp;&lt;&nbsp;software developer&nbsp;/&gt;<span class="blinking">|</span></h2>
+        </div>
+        <div id="lead-overlay"></div>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
         </div>
     </div>
-
-    <!-- ABOUT ME -->
-    <div id="about" class="container-fluid">
-        <div class="row spacing-rows" id="row0">
-            &nbsp;
-        </div>
-        <div class="row" id="row1">
-            <div class="col">Jems Chaudhary</div>
-        </div>
-        <div class="row subrows" id="row2">
-            <div class="col-2 subrow-icons d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined">
-                    work
-                </span>
-            </div>
-            <div class="col">Software Developer</div>
-        </div>
-        <div class="row subrows" id="row3">
-            <div class="col-2 subrow-icons d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined ">
-                    school
-                </span>
-            </div>
-            <div class="col">
-                <span class="row-title">Education:</span> &nbsp; CST - Software Developement - Co-op - Mohawk College.
-            </div>
-        </div>
-        <div class="row subrows" id="row4">
-            <div class="col-2 subrow-icons d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined">
-                    apartment
-                </span>
-            </div>
-            <div class="col"><span class="row-title">Work Experience:</span> &nbsp; Full Stack Developer - TechMaker
-            </div>
-        </div>
-        <div class="row spacing-rows" id="row5">
-            &nbsp;
-        </div>
-    </div>
-
-    <!-- EDUCATION  -->
-    <div id="education" class="container-fluid">
-
-        <div class="row spacing-rows-ed text-center" id="row0">
-            <div class="row">
-                <h1>Education</h1>
-            </div>
-        </div>
-
-        <div class="row" id="row1">
-            <div class="col-12 col-md-6 ed-cols image-contain" id="ed-col1">
-                <div id="img-div">
-                    <img src="src/img/Jems_MohawkCollege_GradPic.png" alt="Graduation-Photo" class="img-fluid">
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-6 ed-cols">
-                <h4>&#10070; Computer Systems Technology - Software Development</h4>
-                <h5>&#10070; Advanced Diploma (3 yrs), Co-op, Mohawk College
-                    <a href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technology-software-development-559"
-                        target="_blank">
-                        <div class="arrow-box">
-                            <span class="arrow" aria-hidden="true">&#8599;</span>
-                        </div>
-                    </a>
-                </h5>
-                <p>&#10070; Study Period: Sept 2019 - Dec 2022 &nbsp;&nbsp; | &nbsp;&nbsp; Graduation: Dec 2022</p>
-
-
-                <div class="row">
-                    <div class="col-12">
-                        <h5>Key Concepts:</h5>
-                        <ul class="list-group">
-                            <li class="list-group-item">&#707; Web Development</li>
-                            <li class="list-group-item">&#707; Data Structures and Algorithms</li>
-                            <li class="list-group-item">&#707; Software Engineering Principles</li>
-                            <li class="list-group-item">&#707; Mobile Application Development</li>
-                            <li class="list-group-item">&#707; Database Management</li>
-                            <li class="list-group-item">&#707; Object-Oriented Programming</li>
-                            <li class="list-group-item">&#707; Network Security</li>
-                            <!-- <li class="list-group-item list-group-item-action">
-                                <a href="https://www.mohawkcollege.ca/programs/technology/computer-systems-technology-software-development-559"
-                                    target="_blank">Click here for Details on Education &nbsp;
-                                    &#8594;</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row spacing-rows" id="row3">
-            &nbsp;
-        </div>
-    </div>
-
-    <!-- WORK HISTORY  -->
-    <div id="work-exp" class="container-fluid">
-        <div class="row text-center" id="row0">
-            <div class="row">
-                <h1>Work History</h1>
-            </div>
-        </div>
-
-        <div class="row" id="row1">
-            <div class="col-md-12 main-col">
-                <ul class="timeline">
-                    <li class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="row">
-                                <div class="col-md-2 work-col-time">
-                                    <strong class="work-time-strong">Nov 2022 - Mar 2024</strong>
-                                </div>
-                                <div class="col-md-10 second-col-li">
-                                    <h4>Full Stack Developer</h4>
-                                    <h5>TechMaker | Winnipeg, MB.</h5>
-                                    <p>
-                                        Engaged in the full spectrum of the Software Development Life Cycle (SDLC)
-                                        within a thriving startup environment, contributing to all facets of product
-                                        development and organizational expansion.</p>
-                                    <div class="dropdown work-exp-dropdowns-main-div">
-                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Details:
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-                                            id="dropdownContent">
-                                            <div class="container dd-content-container">
-                                                <h5>
-                                                    <span class="dd-content-line1-1">Full Stack Developer</span>
-                                                    <span class="dd-content-line1-2">&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;
-                                                        .NET Stack &nbsp; | &nbsp; React &nbsp; | &nbsp; NextJs &nbsp;
-                                                        |
-                                                        &nbsp; SDLC &nbsp; | &nbsp; Azure &nbsp; |</span>
-                                                    <span class="dd-content-line1-3">(Duration:
-                                                        1.5 yrs - Full Time)</span>
-                                                </h5>
-                                                <h5>
-                                                    Duties:
-                                                </h5>
-                                                <ul>
-                                                    <li>
-                                                        Crafted detailed requirement documents with conducting frequent
-                                                        client
-                                                        meetings with refining screen mockups.
-                                                    </li>
-                                                    <li>
-                                                        Created industry-standard UI/UX with using Figma & Canva
-                                                        incorporating
-                                                        stakeholders’ feedback for FE with JS Frameworks.
-                                                    </li>
-                                                    <li>
-                                                        Designed an extensive database schema, considering optimal
-                                                        organization
-                                                        and normalization principles. Implemented the schema in MySQL
-                                                        using
-                                                        Workbench, ensuring data integrity and efficient retrieval.
-                                                    </li>
-                                                    <li>
-                                                        Led the design and implementation of a microservices
-                                                        architecture to
-                                                        modularize distinct modules of the system.
-                                                    </li>
-                                                    <li>
-                                                        Engineered robust and efficient RESTful APIS utilizing the .NET
-                                                        6.0
-                                                        framework, with focusing scalability, security, and performance
-                                                        optimization.
-                                                    </li>
-                                                    <li>
-                                                        Implemented best data structures, parallel/multi-threaded
-                                                        programming
-                                                        with using proficient EF core queries.
-                                                    </li>
-                                                    <li>
-                                                        Rigorously tested APIs using Postman, validating functionality,
-                                                        reliability, and significantly reduced response times.
-                                                    </li>
-                                                    <li>
-                                                        Explored and adopted NextJs framework, and updated UI components
-                                                        with
-                                                        integrating backend APIs.
-                                                    </li>
-                                                    <li>
-                                                        Deployed and maintained project infrastructure on Microsoft
-                                                        Azure,
-                                                        ensuring high security, scalability, and availability.
-                                                    </li>
-                                                    <li>
-                                                        Demonstrated adaptability, self-motivation, and effective
-                                                        communication
-                                                        through working remotely.
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="row">
-                                <div class="col-md-2 work-col-time">
-                                    <strong class="work-time-strong">Sept 2021 - Dec 2021</strong>
-                                </div>
-                                <div class="col-md-10 second-col-li">
-                                    <h4>Learning Accessibility Coach</h4>
-                                    <h5>Mohawk College | Hamilton, ON.</h5>
-                                    <p>Guided and empowered student, imparting crucial knowledge on SDLC methodologies
-                                        and object-oriented systems diagrams, fostering their proficiency and readiness
-                                        for the dynamic world of software development.</p>
-                                    <div class="dropdown work-exp-dropdowns-main-div">
-                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Details:
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-                                            id="dropdownContent">
-                                            <div class="container dd-content-container">
-                                                <h5><span class="dd-content-line1-1">Learning Accessibility Coach</span>
-                                                    <span class="dd-content-line1-2">&nbsp;&nbsp;&nbsp;&nbsp; |
-                                                        &nbsp; Object-Oriented Systems &nbsp; | &nbsp; SDLC &nbsp; |
-                                                        &nbsp; Tutoring
-                                                        &nbsp; |</span>
-                                                    <span class="dd-content-line1-3">(Duration:
-                                                        4 months - Part Time)</span>
-                                                </h5>
-                                                <h5>
-                                                    Duties:
-                                                </h5>
-                                                <ul>
-                                                    <li>Delivered personalized 1-on-1 tutoring sessions to elucidate
-                                                        intricate object-oriented programming concepts, demonstrating
-                                                        deep understanding and proficiency in OOP principles.</li>
-                                                    <li>Utilized innovative teaching methodologies to clarify
-                                                        Object-Oriented Systems design concepts, covering use-case
-                                                        diagrams, state diagrams, UML diagrams, and architecture
-                                                        diagrams.</li>
-                                                    <li>Taught methodologies for gathering requirements and discussed
-                                                        various approaches, fostering an understanding of the importance
-                                                        of thorough requirement analysis in software development
-                                                        projects.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="row">
-                                <div class="col-md-2 work-col-time">
-                                    <strong class="work-time-strong">Jan 2021 - Aug 2021</strong>
-                                </div>
-                                <div class="col-md-10 second-col-li">
-                                    <h4>Assistive Technology Co-op</h4>
-                                    <h5>Halton District School Board | Burlington, ON.</h5>
-                                    <p>As an Assistive Technology Co-op, adeptly managed inventory systems and leveraged
-                                        ticketing systems to troubleshoot hardware and software issues, while also
-                                        pioneering Python automation scripts to streamline operations and enhance
-                                        efficiency in critical tasks.</p>
-                                    <div class="dropdown work-exp-dropdowns-main-div">
-                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Details:
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-                                            id="dropdownContent">
-                                            <div class="container dd-content-container">
-                                                <h5><span class="dd-content-line1-1">Assistive Technology Co-op</span>
-                                                    <span class="dd-content-line1-2">&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;
-                                                        Inventory Management &nbsp; | &nbsp; Python &nbsp; | &nbsp;
-                                                        Google Suite &nbsp; |
-                                                        &nbsp; SharePoint &nbsp; |</span> <span
-                                                        class="dd-content-line1-3">(Duration:
-                                                        8 months - Full Time)</span>
-                                                </h5>
-                                                <h5>
-                                                    Duties:
-                                                </h5>
-                                                <ul>
-                                                    <li>Led the overhaul of the inventory management system at Halton
-                                                        District School Board, expertly managing vast data sets and
-                                                        ensuring precise tracking and control.</li>
-                                                    <li>Engineered sophisticated Python scripts to automate key
-                                                        inventory operations, resulting in a significant boost in
-                                                        efficiency and accuracy.</li>
-                                                    <li>Mastered SharePoint for seamless data integration, enabling
-                                                        dynamic collaboration across platforms such as Google Sites.
-                                                    </li>
-                                                    <li>Expertly utilized advanced ticketing systems to diagnose and
-                                                        resolve technical issues, delivering exceptional support to a
-                                                        diverse team of educators.</li>
-                                                    <li>Orchestrated seamless email communications with numerous
-                                                        teachers, fostering a culture of clear and efficient information
-                                                        exchange across the school board.</li>
-                                                    <li>Configured and optimized operating systems, and authored
-                                                        detailed technical documentation, contributing to streamlined
-                                                        operations and enhanced user experience.</li>
-                                                    <li>Served as the on-site troubleshooter across all schools within
-                                                        the board, exhibiting prowess in resolving intricate operating
-                                                        system issues and conducting OS reinstalls as necessary,
-                                                        ensuring uninterrupted functionality of vital systems.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="row">
-                                <div class="col-md-2 work-col-time">
-                                    <strong class="work-time-strong">Oct 2019 - Oct 2021</strong>
-                                </div>
-                                <div class="col-md-10 second-col-li">
-                                    <h4>Team Member</h4>
-                                    <h5>McBurl Corporation - McDonalds | Burlington, ON.</h5>
-                                    <p>Description: Working on both backend and frontend tasks, implementing new
-                                        features and optimizing existing code.</p>
-                                    <div class="dropdown work-exp-dropdowns-main-div">
-                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Details:
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
-                                            id="dropdownContent">
-                                            <div class="container dd-content-container">
-                                                <h5><span class="dd-content-line1-1">Team Member</span>
-                                                    <span class="dd-content-line1-2">&nbsp;&nbsp;&nbsp;&nbsp; |
-                                                        &nbsp;
-                                                        Communication &nbsp; | &nbsp; Customer-Centric &nbsp; |
-                                                        &nbsp; Teamwork &nbsp; |</span> <span
-                                                        class="dd-content-line1-3">(Duration:
-                                                        2 years - Part Time)</span>
-                                                </h5>
-                                                <h5>
-                                                    Duties:
-                                                </h5>
-                                                <ul>
-                                                    <li>Thrived in a fast-paced, high-pressure environment, consistently
-                                                        delivering exceptional customer service during peak hours.</li>
-                                                    <li>Collaborated effectively with team members to ensure smooth
-                                                        operations, demonstrating strong teamwork and communication
-                                                        skills.</li>
-                                                    <li>Led team initiatives to improve workflow efficiency, resulting
-                                                        in faster service times and enhanced customer satisfaction.</li>
-                                                    <li>Trained and mentored new employees, fostering a supportive and
-                                                        productive team environment.</li>
-                                                    <li>Managed and resolved customer complaints with professionalism,
-                                                        maintaining high standards of service and customer care.</li>
-                                                    <li>Executed multiple tasks simultaneously, including order
-                                                        preparation, cash handling, and inventory management, showcasing
-                                                        excellent multitasking abilities.</li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row spacing-rows" id="row3">
-            &nbsp;
-        </div>
-    </div>
-
-    <!-- !!! UNDER CONSTRUCTION  !!!  Project section is not completely done yet. -->
-    <!-- Projects -->
-    <!-- Main UI:
-        Row 1: Container with 3 rows
-                    1st Row: Tabs
-                    2nd Row: Project Cards
-                    3rd Row: Description PopUp
-    -->
-    <div id="projects" class="container-fluid">
-        <div class="row" id="row0">
-            <h1>Projects</h1>
-        </div>
-
-        <div class="row" id="row1">
-            <div class="container-fluid" id="pro-row-container">
-
-                <div class="pro-div">
-                    <div class="row text-center construction-section">
-                        <div class="col-12">
-                            <div class="const-img-div">
-                                <img src="src/img/constructionsign.png" alt="Construction-Icon"
-                                    class="construction-icon mb-3 img-fluid">
-                            </div>
-                            <h3 class="display-4">This Section is Under Construction</h3>
-                            <p class="lead">Below you'll find a basic
-                                overview
-                                of couple projects.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Connector Web App</h1>
-                        <p>Capstone Project</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p>ASP.NET MVC | C# | jQUERY | SDLC | MySQL | Figma | Testing | WebSockets | SendGrid </p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-details">
-                        <li> Developed user-connectivity features like uploading post/photos, messaging, group creation
-                            & member administration.
-                        </li>
-                        <li>
-                            Utilized .NET Core & ASP.NET with the MVC design pattern in the BE, and employed Razor pages
-                            with UX/UI using jQuery.
-                        </li>
-                        <li>
-                            Demonstrated adherence to the software development life cycle (SDLC) principles with
-                            accurately following milestones.
-                        </li>
-                        <li>
-                            Engineered a custom Identity system for user authentication and incorporated WebSocket for
-                            real-time messaging.
-                        </li>
-                    </div>
-                </div>
-
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Disk Crawler Application</h1>
-                        <p>Parallel Processing</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p>Java | Multi-Threaded Programming | Thread Pools | Executor Service </p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-details">
-                        <li> Developed a multi-threaded disk crawler in Java using ExecutorService to implement
-                            efficient parallel file searching and indexing.
-                        </li>
-                        <li>
-                            Implemented producer-consumer threading with LinkedBlockingQueue, optimizing resource use
-                            and ensuring graceful thread shutdown.
-                        </li>
-                        <li>
-                            Explored the Mandelbrot set, utilizing Thread Pools and implemented a GUI while optimizing
-                            performance with efficient data structures.
-                        </li>
-                    </div>
-                </div>
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Inventory Management Application</h1>
-                        <p>Client-Focused Project</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p>ASP.NET MVC | Client Meetings | Status Updates | Group Work | C# | jQUERY | SDLC | MySQL |
-                            Figma | Testing | WebSockets </p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-details">
-                        <li> Developed a robust web app for a pharmaceutical company as a full-stack developer,
-                            implementing user role-based access control (RBAC).
-                        </li>
-                        <li>
-                            Utilizing JWT for auth, .NET stack with SignalR for WebSocket messaging & notification
-                            features alongside Bootstrap & jQuery for the front end.
-                        </li>
-                    </div>
-                </div>
-
-
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Server Application</h1>
-                        <p>Advanced .NET Project</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p> C# | .NET Core | Asynchronous Programming | RESTful APIs | Kestrel Web Server | SQL Server |
-                            Visual Studio | Error Handling | HTTP Headers | Unit Testing | Logging </p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-details">
-                        <li> Engineered a robust .NET Core 3.1 console application to track and manage health data,
-                            utilizing the Kestrel Web Server for efficient request handling and response management.
-                        </li>
-                        <li>
-                            Created secure and scalable RESTful APIs to interact with a SQL Server/LocalDB database,
-                            ensuring data integrity and security. Implemented advanced error handling techniques and
-                            professional error message logging for seamless user experience.
-                        </li>
-                        <li>
-                            Leveraged asynchronous programming paradigms in C# to enhance the performance and
-                            responsiveness of the server application, ensuring smooth handling of multiple simultaneous
-                            requests.
-                        </li>
-                        <li>
-                            Developed and tested mechanisms to process and respond to HTTP headers and standards
-                            effectively, ensuring compliance with industry best practices and enhancing the
-                            application's interoperability.
-                        </li>
-                        <li>
-                            Developed a deep understanding of headless server applications, HTTP standards, and
-                            asynchronous programming in C#, with creating comprehensive documentation.
-                        </li>
-                    </div>
-                </div>
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Pet Store Management App</h1>
-                        <p>Full-Stack React Application</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p> React.js | Function Components | Hooks | AJAX/Fetch API | RESTful API
-                            Integration | Material-UI | SQLite | Node.js | CRUD Operations | SPA </p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-details">
-                        <li> Built a feature-rich Single Page Application (SPA) utilizing React Function Components and
-                            Hooks, seamlessly integrating AJAX/fetch for real-time backend interactions.
-                        </li>
-                        <li>
-                            Leveraged React's useState and useEffect hooks to manage and synchronize pet inventory data,
-                            ensuring smooth, responsive updates for create, delete, and search functionalities.
-                        </li>
-                        <li>
-                            Implemented comprehensive CRUD operations (Create, Read, Update, Delete) for pet data via
-                            AJAX, offering real-time, user-friendly data management without backend modifications.
-                        </li>
-                        <li>
-                            Styled the entire application using Material-UI for professional and intuitive design,
-                            ensuring a sleek user interface with responsive form inputs, tables, and buttons.
-                        </li>
-                        <li>
-                            Engineered a dynamic, character-by-character search feature that automatically filters
-                            displayed pet data based on user input, providing immediate and accurate search results.
-                        </li>
-                    </div>
-                </div>
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Dynamic Data Mobile App</h1>
-                        <p> React Native Integration</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p> React Native | Web Service Integration | Dynamic Data Retrieval | Flexbox | Mobile App
-                            Development | List View | User Inputs | REST API | Cross-Platform | UI/UX Design </p>
-                    </div>
-
-                    <div class="pro-r-cont-rows pro-details">
-                        <li> Created a React Native mobile application, integrating a web service for dynamic data
-                            retrieval, offering a seamless user experience on both iOS and Android.
-                        </li>
-                        <li>
-                            Implemented a web service to fetch and display data based on user inputs, utilizing dynamic
-                            parameters for customized and real-time content display.
-                        </li>
-                        <li>
-                            Designed an intuitive UI using core components such as List View, TextInput, Buttons, and
-                            Images, ensuring a polished and responsive mobile experience.
-                        </li>
-                        <li>
-                            Employed Flexbox for a fluid and adaptable layout, ensuring that the application's design
-                            scales perfectly across various screen sizes and orientations.
-                        </li>
-                        <li>
-                            Enabled user interactivity through input-based actions, dynamically altering data queries
-                            based on user preferences, enhancing personalization and usability.
-                        </li>
-                        <li>
-                            Exceeded minimum requirements by integrating additional React Native components and
-                            expanding web service endpoints, offering richer data access and user interaction.
-                        </li>
-                    </div>
-                </div>
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Discord Bot</h1>
-                        <p>NodeJS - API Integration</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p> NodeJS | Discord.js | Third-Party API Integration | Command Parsing | Slash Commands | REST
-                            API | Bot Development | User Interactivity | Data Presentation | Web Services </p>
-                    </div>
-
-                    <div class="pro-r-cont-rows pro-details">
-                        <li> Designed and implemented a Discord Bot using NodeJS, creating a server to process user
-                            commands and return dynamic responses.
-                        </li>
-                        <li>
-                            Accessed multiple endpoints from third-party APIs to retrieve and display data, enriching
-                            the bot's responses based on user commands.</li>
-                        <li>
-                            Built a bot that recognized and responded to over five user commands, incorporating
-                            arguments that altered data retrieval from APIs to provide personalized results.
-                        </li>
-                        <li>
-                            Implemented both standard and slash command recognition, enhancing the bot's usability with
-                            structured inputs and interactive elements.
-                        </li>
-                        <li>
-                            Structured bot responses in a user-friendly format, converting raw API data into readable
-                            and actionable insights for the end-users.
-                        </li>
-                        <li>
-                            Enhanced the bot's capabilities by integrating multiple API endpoints and customizing
-                            command structures, exceeding minimum project expectations.
-                        </li>
-                    </div>
-                </div>
-                <div class="pro-div">
-                    <div class=" pro-r-cont-rows pro-title">
-                        <h1>Disaster Response Dashboard</h1>
-                        <p>Vue.js SPA</p>
-                    </div>
-
-                    <div class=" pro-r-cont-rows pro-tech-stack">
-                        <p> Vue.js | Vue Router | Vuex | Websockets | SPA | State Management | Real-Time Data |
-                            Filtering | Analytics Dashboard | Bootstrap </p>
-                    </div>
-
-                    <div class="pro-r-cont-rows pro-details">
-                        <li>
-                            Developed a dynamic SPA using Vue.js, Vue Router, and Vuex to analyze social media posts
-                            during disasters.
-                        </li>
-                        <li>
-                            Implemented a live social media feed that updated continuously via Websockets, displaying
-                            disaster-related posts categorized by type and priority in a customizable format.</li>
-                        <li>
-                            Added checkboxes for users to filter posts by problem type and priority level, enhancing the
-                            interactivity of the live feed.
-                        </li>
-                        <li>
-                            Created an analytics page with a summary table that tracked the number of social media posts
-                            by disaster type and priority, with live updates as new posts were received.
-                        </li>
-                        <li>
-                            Utilized Vuex to manage application data efficiently, ensuring that both the live feed and
-                            analytics pages dynamically reflected the latest post data.
-                        </li>
-                        <li>
-                            Styled the dashboard for a clean and professional appearance, ensuring an intuitive user
-                            experience for desktop screens.
-                        </li>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row spacing-rows" id="row3">
-            &nbsp;
-        </div>
-    </div>
-
-    <!-- <section id="project-section">
-        <div class="ps-rows" id="row1">
-            <h1>Projects</h1>
-        </div>
-        <div class="ps-rows hexagon-main-div" id="row2">
-            <div class="container">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- FOOTER - CONTACT -->
-    <footer id="contact" class="footer mt-auto py-4 bg-dark text-white">
+    <div id="about">
         <div class="container">
             <div class="row">
-                <!-- Contact Information -->
                 <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <p>Email: <a href="mailto:jemschaudhary1125@gmail.com"
-                            class="text-warning">jemschaudhary1125@gmail.com</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/jemsc/" target="_blank">linkedin.com/in/jemsc/</a>
-                    </p>
+                    <h2 class="heading">About Me</h2>
                 </div>
-                <!-- Social Media Links -->
-                <div class="col-md-4">
+                <div class="col-md-8">
+                    <p>Hey, my name is Jems.<br /><br /></p>
+                    <p>
 
-                </div>
-                <!-- Site Map -->
-                <div class="col-md-4">
-                    <h5>Site Map</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#about" class="text-white">Intro</a></li>
-                        <li><a href="#education" class="text-white">Education</a></li>
-                        <li><a href="#work-exp" class="text-white">Work History</a></li>
-                        <li><a href="#projects" class="text-white">Projects</a></li>
-                    </ul>
+                        I'm a software developer.<br /><br />
+
+                        I wrote my first index.html in sixth grade, and since that moment, I've been captivated by the
+                        art of web development. My path has been focused on pushing my boundaries and discovering new
+                        possibilities while adapting to the constantly changing world of technology.
+                        <br /> <br />
+
+                        When I’m not coding, you’ll probably find me on the tennis court, perfecting my serve or
+                        planning my next adventure. With a
+                        natural love for mathematics and an analytical mindset, I’m dedicated to solving problems that
+                        not only work well but also make an impact.
+                        <br /> <br />
+
+                        And yes, I’ll admit—if it involves a bit of code and a bit of creativity, I’m all in!
+                    </p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <h3>Programming Languages</h3>
+        <ul>
+            <li><i class="devicon-csharp-plain"></i><span class="skills-inline">C#</span></li>
+            <li><i class="fab fa-java" aria-hidden="true"></i><span class="skills-inline">Java</span></li>
+            <li><i class="fab fa-js" aria-hidden="true"></i><span class="skills-inline">JavaScript</span></li>
+            <li><i class="fab fa-python" aria-hidden="true"></i><span class="skills-inline">Python</span></li>
+            <li><i class="fab fa-php" aria-hidden="true"></i><span class="skills-inline">PHP</span></li>
+            <li><i class="fab fa-html5" aria-hidden="true"></i><span class="skills-inline">HTML5</span></li>
+        </ul>
+        <h3>Frameworks &amp; Libraries</h3>
+        <ul>
+            <li><i class="devicon-dotnetcore-plain"></i><span class="skills-inline">ASP.NET Core</span></li>
+            <li><i class="fab fa-react" aria-hidden="true"></i><span class="skills-inline">React</span></li>
+            <li><i class="fab fa-node" aria-hidden="true"></i><span class="skills-inline">Node.js</span></li>
+            <li><i class="devicon-typescript-plain"></i><span class="skills-inline">TypeScript</span></li>
+            <li><i class="fab fa-vuejs" aria-hidden="true"></i><span class="skills-inline">Vue.js</span></li>
+            <li><i class="devicon-jquery-plain"></i><span class="skills-inline">jQuery</span></li>
+            <li><i class="fab fa-bootstrap" aria-hidden="true"></i><span class="skills-inline">Bootstrap</span></li>
+        </ul>
+        <h3>Tools</h3>
+        <ul>
+            <li><i class="fab fa-git-alt" aria-hidden="true"></i><span class="skills-inline">git</span></li>
+            <li><i class="devicon-microsoftsqlserver-plain"></i><span class="skills-inline">SQL</span></li>
+            <li><i class="devicon-mysql-plain"></i><span class="skills-inline">MySQL</span></li>
+            <li><i class="devicon-wordpress-plain"></i><span class="skills-inline">WordPress</span></li>
+            <li><i class="devicon-figma-plain"></i><span class="skills-inline">Figma</span></li>
+        </ul>
+        <h3>Operating Systems</h3>
+        <ul>
+            <li><i class="devicon-windows8-original"></i><span class="skills-inline">Windows</span></li>
+            <li><i class="devicon-android-plain"></i><span class="skills-inline">Android</span></li>
+            <li><i class="devicon-apple-original"></i><span class="skills-inline">macOS</span></li>
+            <li><i class="devicon-linux-plain"></i><span class="skills-inline">Linux</span></li>
+        </ul>
+    </div>
+    <div id="experience">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="vtimeline-block"><span class="vtimeline-date">Nov 2022 – Mar 2024</span>
+                    <div data-date="Feb 2022 – Present" class="vtimeline-content">
+                        <h3>TechMaker Inc.</h3>
+                        <h4>Full Stack Software Developer</h4>
+                        <p>Winnipeg, Ontario <i>(remote)</i></p><br />
+                        <p>
+                            • Expertly led the end-to-end design and implementation of a scalable <span>microservices
+                                architecture</span>, effectively modularizing distinct components.
+                            </br>• Fostered strong client relationships by effectively managing
+                            <span>requirement-gathering</span> meetings and UX/UI review communications, including
+                            comprehensive training sessions on the new SaaS platform, which significantly enhanced
+                            project outcomes and <span>client</span> satisfaction.
+                            </br>• Utilized design tools like Canva and <span>Figma</span> to create
+                            engaging UX/UI prototypes, ensuring responsiveness across multiple device sizes.
+                            </br>• Built high-performing front-end applications with the <span>React</span> framework
+                            and <span>Next.js</span>, enhancing user experience and interactivity.
+                            </br>• Designed an extensive highly secure database schema with optimal and normalization
+                            principles. Implemented <span>MySQL</span> using Workbench.
+                            </br>• Developed security strategies for infrastructure, focusing on network security,
+                            breach escalation, disaster recovery, and patch management.
+                            </br>• Engineered robust and efficient RESTful APIs utilizing the <span>C# .NET 6.0
+                                framework</span>, with performance optimization using best OOP practices.
+                            </br>• Implemented best data structures, parallel/multi-threaded programming with proficient
+                            EF Core queries, and cloud computing solutions.
+                            </br>• Rigorously developed test plans, extensively tested APIs using <span>Postman</span>,
+                            significantly reducing response times & improving overall performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="vtimeline-block"><span class="vtimeline-date">Sept 2021 – Dec 2021</span>
+                    <div data-date="May 2020 – Feb 2022" class="vtimeline-content">
+                        <h3>Mohawk College</h3>
+                        <h4>Learning Accessibility Coach</h4>
+                        <p>Hamilton, Ontario</p>
+                        <p>
+                            • Explained technical topics like <span>Object-Oriented Systems (OOP)</span> and agile
+                            methodologies in
+                            one-on-one sessions, improving individual understanding.
+                            </br>• Used 3D model design to teach agile concepts, while simplifying complex topics like
+                            state diagrams and <span>use case diagrams</span>, showcasing creativity and adaptability in
+                            personalized learning for special students.
+                            </br>• Consistently prepared and delivered sessions on time, meeting deadlines with a span
+                            sense of responsibility and attention to detail.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="vtimeline-block"><span class="vtimeline-date">Jan 2021 – Aug 2021</span>
+                    <div data-date="Feb – Apr 2021" class="vtimeline-content">
+                        <h3>Halton District School Board (HDSB)</h3>
+                        <h4>Assistive Technology Co-op</h4>
+                        <p>Burlington, Ontario <i>(remote)</i></p><br />
+                        <p>
+                            • Led the overhaul of the inventory management system at Halton District School
+                            Board,
+                            expertly managing vast data sets and ensuring precise tracking and control.
+                            <br />• Engineered sophisticated <span>Python</span> scripts to automate key inventory
+                            operations,
+                            resulting in a significant boost in efficiency and accuracy.
+                            <br />• Mastered <span>SharePoint</span> for seamless data integration, enabling dynamic
+                            collaboration across platforms such as <span>Google Sites</span>.
+                            <br />• Expertly utilized advanced ticketing systemsto diagnose and resolve
+                            technical issues, delivering exceptional support to a diverse team of educators.
+                            <br />• Orchestrated seamless email communications with numerous teachers,
+                            fostering a culture of clear and efficient information exchange across the school board.
+                            <br />• Configured and optimized operating systems, and authored detailed
+                            technical documentation, contributing to streamlined operations and enhanced
+                            user experience.
+                            <br />• Served as the on-site troubleshooter across all schools within the board, exhibiting
+                            prowess in resolving intricate <span>operating system</span> issues and conducting OS
+                            reinstallsas necessary, ensuring uninterrupted functionality of vital systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="vtimeline-block"><span class="vtimeline-date">May 2020 – Aug 2020</span>
+                    <div data-date="Jan 2021 – Oct 2022" class="vtimeline-content">
+                        <h3>Freelance</h3>
+                        <h4>Web Developer</h4>
+                        <p>Hamilton, Ontario</p><br />
+                        <p>
+                            • Developed and customized <span>WordPress</span> websites tailored to client branding and
+                            design requirements, focusing on delivering engaging, responsive, and user-friendly
+                            interfaces.
+                            </br>• Ensured seamless front-end user experiences by designing intuitive UI
+                            elements and layouts, leveraging both <span>custom CSS</span> and plugins for
+                            enhanced functionality and style.
+                            </br>• Conducted thorough code reviews to secure all forms against potential
+                            vulnerabilities, enhancing site <span>performance</span> and safety by over
+                            30%.
+                            </br>• Managed client consultations to gather requirements, present UI
+                            mockups, and provide ongoing updates, fostering span client relationships and
+                            ensuring alignment with their vision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="vtimeline-block"><span class="vtimeline-date">Oct 2019 – Oct 2021</span>
+                    <div data-date="Mar – Aug 2018" class="vtimeline-content">
+                        <h3>McBurl Corporation - McDonalds</h3>
+                        <h4>Team Member</h4>
+                        <p>Burlington, Ontario</p><br />
+                        <p>
+                            • Thrived in a fast-paced, <span>high-pressure environment</span>, consistently delivering
+                            exceptional
+                            customer service during peak hours.
+                            <br />• Collaborated effectively with <span>team members</span> to ensure smooth operations,
+                            demonstrating strong teamwork and communication skills.
+                            <br />• Led team initiatives to improve workflow efficiency, resulting in faster service
+                            times and enhanced customer satisfaction.
+                            <br />• Managed and resolved customer complaints with professionalism, maintaining high
+                            standards of service and customer care.
+                            <br />• Executed multiple tasks simultaneously, including order preparation, cash handling,
+                            and inventory management, showcasing excellent <span>multitasking</span> abilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Mohawk College of Applied Arts and Technology</h3>
+            <span class="education-date">Sept 2019 - Dec 2022</span>
+            <h4>Advanced Diploma (co-op) in Software Development</h4>
+            <p>
+                Hamilton, Ontario
+            </p>
+        </div>
+    </div>
+    <div id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
             <div class="row">
-                <div class="col-12 text-center mt-3">
-                    <p class="mb-0">&copy; 2024 Jems Portfolio. All rights reserved. &nbsp; &nbsp; | &nbsp; &nbsp;
-                        v0.2.7
-                    </p>
+                <div class="project">
+                    <div class="project-image-left photo-div">
+                        <img src="./src/img/Connector_ScreenShot.png" alt="Connector-Project-SS">
+                    </div>
+                    <div class="project-info project-info-left">
+                        <h3>Connector Web Application</h3>
+                        <p>
+                            It is a comprehensive social networking platform designed to
+                            connect users through shared interests. This capstone project features user registration,
+                            profile updates, and the ability to upload posts and chat with connections. Additionally,
+                            users can create groups with <i>administrative</i> capabilities, allowing for effective
+                            collaboration and community building.
+                        </p>
+                        <ul>
+                            <li>ASP.NET</li>
+                            <li>SQL</li>
+                            <li>Azure</li>
+                            <li>jQuery</li>
+                        </ul><br />
+                        <a href="https://docs.google.com/document/d/1fxH0KosFykiiI98hn4SFwPFiTEx6COz209OO5BqhXNw/edit?usp=sharing"
+                            target="_blank">Open Google Doc</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image-right photo-div">
+                        <img src="./src/img/Mangelbrot-Set.png" alt="Mangelbrot-Set Screen Capture">
+                    </div>
+                    <div class="project-info project-info-right">
+                        <h3>Disk Crawler Application</h3>
+                        <p>
+                            A Java application, demonstration of parallel processing and multi-threading by implementing
+                            an
+                            advanced disk crawling algorithm that efficiently searches, indexes, and processes files
+                            across directories using ExecutorService and Thread Pools.
+                            Also explored Mandelbrot set, demonstrating performance optimization using Thread Pools.
+                        </p>
+                        <ul>
+                            <li>Java</li>
+                            <li>Multi-threading</li>
+                        </ul><br />
+                        <a href="https://github.com/Jm0091/Disk-Crawler-Application" target="_blank">Open on GitHub</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image-left" id="video-parent-div">
+                        <div class="video-container">
+                            <a href="https://www.youtube.com/watch?v=RuSiQyjpGDs&ab_channel=JemsChaudhary"
+                                target="_blank" title="Open in YouTube">
+                                <video controls>
+                                    <source src="./src/video/HamiltonWaterfalls.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info project-info-left">
+                        <h3>Hamilton Waterfall Explorer</h3>
+                        <p>
+                            A responsive web application that makes use of the open data provided by the city of
+                            Hamilton
+                            and allows to navigate route using Google Maps API.
+                        </p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Google Maps API</li>
+                            <li>API Integration</li>
+                        </ul><br />
+                        <a href="https://github.com/Jm0091/Hamilton-Waterfalls" target="_blank">Open on GitHub</a>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image-right photo-div">
+                        <img src="./src/img/ChatApp_ScreenShot.png" alt="Chatting-App-SS">
+                    </div>
+                    <div class="project-info project-info-right">
+                        <h3>Live Chatting App</h3>
+                        <p>
+                            A single-page application allows users to join chatrooms and engage in real-time
+                            conversations
+                            with other participants, providing a dynamic social experience. This application is
+                            developed
+                            with C#, SignalR, Bootstrap, JavaScript and uses a SQL database to store information about
+                            users allowing option
+                            to view chat history.
+                        </p>
+                        <ul>
+                            <li>ASP.NET</li>
+                            <li>SQL</li>
+                            <li>SignalR</li>
+                            <li>JavaScript</li>
+                        </ul><br />
+                        <a href="https://github.com/Jm0091/Live-Chatting-App" target="_blank">Open on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h2 class="heading">Let's Talk</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/f/mgveovgz">
+                <input type="hidden" name="_subject" value="Contact request from Jems Portfolio">
+                <input type="email" name="_replyto" placeholder="Your email" required="">
+                <textarea name="message" placeholder="Your message" required=""></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Jm0091" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jemsc/" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
 
-
-
-    <!-- Include jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-    <!-- App's JS -->
-    <script src="script.js"></script>
 </body>
 
 </html>
