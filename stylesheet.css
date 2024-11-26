@@ -145,7 +145,7 @@ header.active {
 header.sticky {
   position: fixed;
   z-index: 99;
-} 
+}
 #menu.active {
   display: block;
 }
@@ -562,7 +562,7 @@ ul {
   margin-top: 0;
 }
 
-.photo-div{
+.photo-div {
   width: 300px;
   height: 300px;
 }
@@ -625,6 +625,30 @@ ul {
 #more-projects {
   display: none;
 }
+
+.extra-projects {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+ .bottom-button {
+  all: unset;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #00ca9a;
+  font-size: 900;
+}
+
+.bottom-button:hover {
+  text-decoration: underline #00ca9a;
+  text-decoration-thickness: 2px; 
+  text-decoration-skip-ink: none; 
+  transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease; /* Transition for smooth effect */
+} 
+
+
 
 
 /* Footer Section */

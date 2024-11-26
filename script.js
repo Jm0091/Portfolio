@@ -25,5 +25,14 @@
     }),
     n("#mobile-menu-close").click(function () {
       n("header, body").removeClass("active");
-    })
+    }),
+    n('#viewMoreBtn').click(function() {
+      n('.extra-projects').each(function(index) {
+          n(this).delay(index * 200).fadeIn(500).css({
+            'opacity': 1, 
+            'transform': 'translateY(0)'  
+          }); 
+      });
+      n(this).fadeOut();
+  });
 })(jQuery);
