@@ -648,6 +648,11 @@ ul {
   transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease; /* Transition for smooth effect */
 } 
 
+.continueSpan{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  color: #00ca9a;
+}
 
 
 
