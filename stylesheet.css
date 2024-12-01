@@ -665,7 +665,10 @@ ul {
 #viewMoreSkillsBtn {
   margin-top: 30px;
 }
-
+.skills-wrapper {
+  width: 80%;
+  margin: auto;
+}
 .skills-wrapper p {
   color: #d63384;
   font-size: 16px;
@@ -687,14 +690,13 @@ ul {
 #search-bar {
   padding: 6px;
   margin: 0px 30px 30px 30px;
-  color: white; 
-  background-color: transparent;  
-  border: none; 
+  color: white;
+  background-color: transparent;
+  border: none;
   border-bottom: 1px solid #d63384;
-  outline: none;   
-  transition: border-color 0.3s ease; 
+  outline: none;
+  transition: border-color 0.3s ease;
 }
-
 
 /* Footer Section */
 footer {
@@ -990,6 +992,10 @@ footer {
   .skills-inline {
     display: inline-block;
     margin-left: 5px;
+  }
+  .skills-wrapper {
+    width: 94%;
+    margin: auto;
   }
   #lead-content h1 {
     font-size: 1.5em;
