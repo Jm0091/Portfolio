@@ -626,13 +626,13 @@ ul {
   display: none;
 }
 
-.extra-projects {
+.more-projects {
   display: none;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
- .bottom-button {
+.bottom-button {
   all: unset;
   justify-content: center;
   align-items: center;
@@ -643,17 +643,57 @@ ul {
 
 .bottom-button:hover {
   text-decoration: underline #00ca9a;
-  text-decoration-thickness: 2px; 
-  text-decoration-skip-ink: none; 
-  transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease; /* Transition for smooth effect */
-} 
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
+  transition: text-decoration-color 0.3s ease,
+    text-decoration-thickness 0.3s ease; /* Transition for smooth effect */
+}
 
-.continueSpan{
-  font-family: 'Courier New', Courier, monospace;
+.continueSpan {
+  font-family: "Courier New", Courier, monospace;
   font-size: medium;
   color: #00ca9a;
 }
 
+.more-skills {
+  margin-top: 40px;
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+#viewMoreSkillsBtn {
+  margin-top: 30px;
+}
+
+.skills-wrapper p {
+  color: #d63384;
+  font-size: 16px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+.tech-span {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  border-right: 2px solid rgb(170, 69, 85);
+  margin-top: 4px;
+}
+#search-bar {
+  padding: 6px;
+  margin: 0px 30px 30px 30px;
+  color: white; 
+  background-color: transparent;  
+  border: none; 
+  border-bottom: 1px solid #d63384;
+  outline: none;   
+  transition: border-color 0.3s ease; 
+}
 
 
 /* Footer Section */
